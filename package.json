@@ -1,0 +1,15 @@
+{
+  "name": "node-cdn",
+  "version": "0.0.1",
+  "description": "nodejs app to serve prod ready css/js files",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kyle morton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
