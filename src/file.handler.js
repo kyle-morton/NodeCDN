@@ -8,10 +8,11 @@ module.exports = class FileHandler {
      * @param {*} filePath 
      * @param {*} response 
      */
-    ReadFile(filePath, response) {
+    ReadFile(filePath, response, counter) {
         fs.exists(filePath, exists => {
             if (exists) {           
-                response.sendFile(filePath);
+                response.sendFile(filePath); 
+                console.log('request ' + counter + ' finished at: ' + new Date());
             }else {
                 response.status(404).send('Not found');
             }
